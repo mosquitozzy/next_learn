@@ -1,4 +1,14 @@
 import '@/app/ui/global.css'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | zed-dashboard',
+    default: 'zed-dashboard',
+  },
+  description: 'zed-dashboard',
+  metadataBase: new URL('https://next-learn-dashboard.vercel.sh')
+}
 
 export default function RootLayout({
   children,
